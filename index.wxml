@@ -1,0 +1,31 @@
+<!--pages/cart/index.wxml-->
+<view class='head'>豆瓣|豆品</view>
+<view class='qx-title'>
+  <view class='quanxuan'></view>
+  豆瓣豆品
+</view>
+
+<view wx:for="{{cartUrls}}" class='proItem'>
+  <view class='gouxuan'></view>
+  <image src="{{item.backimg}}"></image>
+  <view class='proBox'>
+    <p class='proTitle'>{{item.name}}</p>
+    <p class='proDesc'>{{item.color}}</p>
+    <view class='numBox'>
+      <view class='jian'>-</view>
+      <view class='number'>{{item.num}}</view>
+      <view class='jia'>+</view>
+    </view>
+    <p class='move'>删除</p>
+    <p class='d-price'>¥ {{item.price}}</p>
+  </view>
+</view>
+
+<view class='wicket'>
+  <view class='quanxuan'></view>
+  <p class='qx'>全选</p>
+  <view class='buyRightNow'>请选择</view>
+  <view class='zj'>¥ 0.00
+  <p class='freight'>(不含运费)</p>
+  </view>
+</view>
