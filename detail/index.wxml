@@ -1,0 +1,9 @@
+<!--pages/detail/index.wxml-->
+<image class='headImg' src='{{infoUrls.img}}'></image>
+<view class='descBox'>
+  <p class='descTitle'>{{infoUrls.title}}</p>
+  <p class='descPrice'>{{infoUrls.price}}</p>
+  <p class='freight'>{{infoUrls.desc}}</p>
+  <view class='buyBtn'>立即购买</view>
+</view>
+  <image wx:for="{{infoUrls.content}}" src="{{item.img}}"></image>
