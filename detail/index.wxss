@@ -1,0 +1,43 @@
+/* pages/detail/index.wxss */
+.headImg{
+  float:left;
+  height:550rpx;
+  width:100%;
+}
+.descBox{
+  float:left;
+  width:100%;
+  text-align: center;
+}
+.descTitle{
+  float:left;
+  width:100%;
+  color:#4f4f4f;
+  font-size:57rpx;
+  line-height:170rpx;
+}
+.descPrice{
+  float:left;
+  width:100%;
+  color:#dd1944;
+  font-size:39rpx;
+  line-height:10rpx;
+}
+.freight{
+  float:left;
+  width:100%;
+  color:#ababac;
+  font-size:32rpx;
+  line-height:110rpx;
+}
+.buyBtn{
+  float:left;
+  height:110rpx;
+  width:80%;
+  margin:0 10%;
+  background:#dd1944;
+  color:white;
+  text-align: center;
+  line-height: 110rpx;
+  border-radius: 10rpx;
+}
