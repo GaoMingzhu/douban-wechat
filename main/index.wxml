@@ -1,0 +1,34 @@
+<!--pages/main/index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  indicatorDots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" 
+  duration="{{duration}}" indicator-color="{{b_color}}"
+  indicator-active-color="{{d_color}}" circular="{{circular}}">
+  <block wx:for="{{bannerUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item.img}}" bindtap='toBanner' class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="user-bar">
+  <view class='user-bar-cart' bindtap='toCart'>购物车</view>
+  <view class='user-bar-line'></view>
+  <view class='user-bar-people'>我的豆品</view>
+</view>
+<view class='product-list'>
+  <view class='product-list-header'>新品首发</view>
+  <view class='product-list-content clearfix'>
+    <view wx:for="{{goodsUrls}}" class='product-list-item' bindtap='toDetail'>
+      <image class='product-img-box' src="{{item.img}}">
+        <image class="product-out-img" src='{{item.outImg}}'></image>
+      </image>
+      <p class='product-cart-title'>{{item.title}}</p>
+      <p class='product-cart-desc'>{{item.desc}}</p>
+      <p class='product-cart-price'>{{item.price}}</p>
+      <view wx:for="{{item.tag}}" class='product-cart-tag'
+       style="color:{{item.color}};border:2rpx solid {{item.color}}">
+       {{item.name}}
+      </view>
+    </view>
+  </view>
+</view>
