@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "pages/main/index",
+    "pages/detail/index",
+    "pages/cart/index"
+  ],
+  "sitemapLocation": "sitemap.json"
+}
